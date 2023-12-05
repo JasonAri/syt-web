@@ -28,7 +28,7 @@
   .content {
     width: 1200px;
     height: 70px;
-    background: #e3e3e3;
+    background: #fff;
     display: flex;
     justify-content: space-between;
     .left {
