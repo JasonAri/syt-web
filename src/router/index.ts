@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 export default createRouter({
   // 路由的模式设置
   history: createWebHistory(),
+  // 路由表
   routes: [
     {
       path: "/home",

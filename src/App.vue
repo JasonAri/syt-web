@@ -3,7 +3,9 @@
     <!-- 顶部全局组件 -->
     <HospitalTop />
     <!-- 展示路由组件的区域 -->
-    <div class="content">xxx</div>
+    <div class="content">
+      <router-view></router-view>
+    </div>
     <!-- 底部全局组件 -->
     <HospitalBottom />
   </div>

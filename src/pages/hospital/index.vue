@@ -1,3 +1,3 @@
-<template>222</template>
+<template>hospital</template>
 <script setup lang="ts"></script>
 <style scoped lang="scss"></style>
