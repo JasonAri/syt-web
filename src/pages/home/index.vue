@@ -22,8 +22,6 @@
           :page-sizes="[10, 20, 30, 40]"
           layout="prev,pager,next,sizes,total"
           :total="total"
-          @size-change="handleSizeChange"
-          @current-change="handleCurrentChange"
         />
       </el-col>
       <el-col :span="4">456</el-col>
