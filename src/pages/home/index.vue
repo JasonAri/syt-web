@@ -37,10 +37,22 @@ import Region from "./region/index.vue";
 import Card from "./card/index.vue";
 
 // 分页器需要的数据
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
+import { reqHospital } from "@/api/home";
 let pageNo = ref<number>(1);
 let pageSize = ref<number>(10);
 let total = ref<number>(11);
+
+// 组件挂载完毕，发一次请求
+onMounted(() => {
+  getHospitalInfo();
+});
+
+// 获取已有的医院的数据
+const getHospitalInfo = async () => {
+  let result: any = await reqHospital(pageNo.value, pageSize.value);
+  console.log(result);
+};
 </script>
 
 <style scoped lang="scss">
